@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" rel="stylesheet"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet"></script>
+
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class = "container">
+			<div class ="navbar-header">
+				<a class="navbar-brand" href="#">Lyle School</a>
+			</div>
+			<div class="collapse navbar-collapse" id="main-links">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Schedule<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Grades</a></li>
+				</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Update Profile</a></li>
+						<li><a href="#">Change Password</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container" id="add-course">
+		<button type="button" class="btn btn-info btn-lg pull-right" data-toggle="modal" data-target="#addCourse">Add Course</button>
+
+  		<div class="modal fade" id="addCourse" role="dialog">
+    		<div class="modal-dialog">
+    
+      		<div class="modal-content">
+        			<div class="modal-header">
+          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+          			<h4 class="modal-title">Add Course</h4>
+        			</div>
+        		<div class="modal-body">
+          		<form>
+          			<div class="form-group">
+          				<label for="course">Course:</label>
+          				<input type="text" class="form-control" id="course">
+          		</form>
+        		</div>
+        		<div class="modal-footer">
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          		<button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+        		</div>
+      	</div>
+    	</div>
+  </div> 
+</div>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#fall-2016" data-toggle="tab">Fall 2016</a></li>
+			<li><a href="#spring-2017" data-toggle="tab">Spring 2017</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="fall-2016">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>Course</th>
+							<th>Title</th>
+							<th>Section</th>
+							<th>Instructor</th>
+							<th>Days</th>
+							<th>Times</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>CSE 3345</td>
+							<td>Graphical User Interface</td>
+							<td>4471</td>
+							<td>Lawrimore</td>
+							<td>Mon/Wed</td>
+							<td>5:00-6:20</td>
+						</tr>
+												<tr>
+							<td>CSE 3330</td>
+							<td>Database Concepts</td>
+							<td>4472</td>
+							<td>Boyd</td>
+							<td>Tues/Thurs</td>
+							<td>5:00-6:20</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="tab-pane" id="spring-2017">
+				<p id="spring-2017">
+					No classes found!
+				</p>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+header {
+	padding-top: 20px;
+	background-color:#00111a;
+}
+
+body {
+	padding-top: 100px;
+	background-color:#e6f7ff;
+}
+
+.navbar.navbar-default.navbar-fixed-top {
+
+	color: white;
+	background-color: #00111a;
+}
+
+.collapse.navbar-collapse {
+
+	color: white;
+	background-color: #00111a;
+}
+
+.a.navbar-brand {
+	color: white;
+}
