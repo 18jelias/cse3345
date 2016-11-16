@@ -1,0 +1,11 @@
+#info {
+	width: 600px;
+}
+
+#info div {
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+	float: left;
+	border: solid 1px black;
+}

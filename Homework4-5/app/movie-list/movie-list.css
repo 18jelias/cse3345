@@ -1,0 +1,30 @@
+.media-left img {
+	width: 100px;
+}
+
+.rating .glyphicon {
+	font-size: 20px;
+	top: 5px;
+}
+
+.glyphicon-edit {
+	margin: 5px;
+	vertical-align: 3px;
+	opacity: 0.25;
+	font-size: 10px;
+}
+
+.glyphicon-edit:hover {
+	opacity: 1;
+}
+
+.glyphicon-trash {
+	color: red;
+	opacity: 0.25;
+	vertical-align: 3px;
+	font-size: 10px;
+}
+
+.glyphicon-trash:hover {
+	opacity: 1;
+}

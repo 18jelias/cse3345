@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>{{ title }}</h1>
+    <div class="row">
+        <div class="col-md-10">
+            <div class="form-group">
+                <label for="movie_name">
+                    Name
+                </label>
+                <input id="movie_name"
+                    class="form-control"
+                    [(ngModel)]="_temp.title"/>
+                 <label for="movie_year">
+                    Year
+                </label>
+                <select id="movie_year"
+                    class="form-control"
+                    [(ngModel)]="_temp.year">
+                    <option *ngFor="let num of years"> {{ num }} </option>
+                </select>     
+                <label for="movie_path">
+                    Image Path
+                </label>
+                <input id="movie_path"
+                    class="form-control"
+                    [(ngModel)]="_temp.imagePath"/>                                   
+            </div>
+            <a class="btn btn-primary btn-block btn-lg"
+                (click)="save()">
+                Save    
+            </a>
+            <a class="btn btn-default btn-block btn-lg"
+                href="../">
+                Return to List
+            </a>
+        </div>
+    </div>
+</div>

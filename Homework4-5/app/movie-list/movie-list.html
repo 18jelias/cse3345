@@ -1,0 +1,21 @@
+<div class="container">
+	<h1>{{ title }}</h1>		
+	<a href="/add" class="btn btn-primary pull-right">Add movie</a>
+	<div *ngIf="(movies.length) === 0">
+		There are no movies in the database.
+	</div>
+	<div class="media" *ngFor="let movie of movies">
+		<span class="media-left">
+		<img [src]="movie.imagePath" alt="{{ movie.title }}" />
+	</span>
+		<div class="media-body">
+			<h4 class="media-heading">
+				{{ movie.title }} ({{ movie.year }}) 
+				<span class="glyphicon glyphicon-edit"
+					[routerLink]="['/edit', movie.id]"></span>
+				<span (click)= "movieRepository.delete(movie.id)" class="glyphicon glyphicon-trash"></span>
+			</h4>
+			<rating [model]="movie.rating"></rating>
+		</div>
+	</div>
+</div> 
